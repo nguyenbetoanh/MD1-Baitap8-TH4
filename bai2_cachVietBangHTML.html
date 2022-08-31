@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>bai 2</h1>
+<input type="text" id="1">
+<button onclick="khiBamNut()">dang nhap</button>
+<h1 id="hienHinh"></h1>
+<script>
+  function khiBamNut() {
+    var login = document.getElementById('1').value
+
+    if (login == 'Employee') {
+      document.getElementById('hienHinh').innerHTML = '<h1 style="color:blue"> Hello</h1>';
+    } else if (login == 'Director') {
+      document.getElementById('hienHinh').innerHTML = '<h1 style="color:red"> Greetings</h1>';
+    } else if (login == '') {
+      document.getElementById('hienHinh').innerHTML = '<h1 style="color:red"> No login</h1>';
+    } else {
+      document.getElementById('hienHinh').innerHTML = '<h1 style="color:red">Đừng nhập linh tinh nữa bro</h1>';
+    }
+  }
+</script>
+
+
+</body>
+</html>
